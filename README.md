@@ -1,3 +1,3 @@
 # rounaknotesapp
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/rounaknotesapp)
+The front-end for the notes-api
