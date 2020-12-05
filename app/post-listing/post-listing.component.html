@@ -1,0 +1,17 @@
+<div class="container">
+	<marquee>
+		<h3>You can use your id to acess notes from anywhere</h3>
+	</marquee>
+	<label>Your id  is </label>
+	<input value={{id}} #box1 (keyup.enter)="input(box1.value)" readonly>
+	<br><br>
+	<label>Write Note </label>
+	<input #box2 (keyup)="note(box2.value)">
+	<br><br>
+	<button (click)="get()">Get</button>
+	<button (click)="post()" >Post</button>
+	<p *ngIf="data_a">All notes available on server - {{ret_data.length}}</p>
+	<tr *ngFor="let ret_data of ret_data.slice().reverse()">
+		<td>{{ ret_data.note }}</td>
+	</tr>
+</div>

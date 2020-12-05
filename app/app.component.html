@@ -1,0 +1,13 @@
+<div *ngIf="main">
+	<marquee>
+		<h3>You can use your id to acess notes from anywhere</h3>
+	</marquee>
+	<h2>Get a new id</h2>
+	<button (click)="getID()">New session</button>
+	<h1>OR</h1>
+	<h2>Use previous id</h2>
+	<p>(To view exsisting notes)</p>
+	<input #boxin (keyup.enter)="input(boxin.value)">
+	<p>Press enter to start</p>
+</div>
+<app-post-listing *ngIf="check" [uid]="uid"></app-post-listing>
