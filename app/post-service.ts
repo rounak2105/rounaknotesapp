@@ -6,7 +6,7 @@ export class PostsService {
   readonly ROOT_URL;
 
   constructor(private http: Http) {
-    this.ROOT_URL = "https://the-notes-app-angular-node.herokuapp.com";
+    this.ROOT_URL = "https://notes-app-flash.onrender.com/";
   }
 
   getNotes(id) {
